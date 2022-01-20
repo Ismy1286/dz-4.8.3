@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ACC8F07FFD414D8FACEF39E5 /* Pods_dz_4_8_3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D33E57A26C7D02CF39F7CCA /* Pods_dz_4_8_3.framework */; };
 		CE46A71D27995AFA0054DAE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE46A71C27995AFA0054DAE8 /* AppDelegate.swift */; };
 		CE46A71F27995AFA0054DAE8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE46A71E27995AFA0054DAE8 /* SceneDelegate.swift */; };
 		CE46A72127995AFA0054DAE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE46A72027995AFA0054DAE8 /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D33E57A26C7D02CF39F7CCA /* Pods_dz_4_8_3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dz_4_8_3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEA0E36E2A1D3AABE1C50E1B /* Pods-dz-4.8.3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dz-4.8.3.release.xcconfig"; path = "Target Support Files/Pods-dz-4.8.3/Pods-dz-4.8.3.release.xcconfig"; sourceTree = "<group>"; };
 		CE46A71927995AFA0054DAE8 /* dz-4.8.3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dz-4.8.3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE46A71C27995AFA0054DAE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE46A71E27995AFA0054DAE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		CE46A72527995AFD0054DAE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE46A72827995AFD0054DAE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE46A72A27995AFD0054DAE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F52286D9969AE9629D6A9E38 /* Pods-dz-4.8.3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dz-4.8.3.debug.xcconfig"; path = "Target Support Files/Pods-dz-4.8.3/Pods-dz-4.8.3.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACC8F07FFD414D8FACEF39E5 /* Pods_dz_4_8_3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52E8E2A5AE7B942140900934 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D33E57A26C7D02CF39F7CCA /* Pods_dz_4_8_3.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CE46A71027995AFA0054DAE8 = {
 			isa = PBXGroup;
 			children = (
 				CE46A71B27995AFA0054DAE8 /* dz-4.8.3 */,
 				CE46A71A27995AFA0054DAE8 /* Products */,
+				EEBC9ECF3DF005D2CC62CCBD /* Pods */,
+				52E8E2A5AE7B942140900934 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = "dz-4.8.3";
 			sourceTree = "<group>";
 		};
+		EEBC9ECF3DF005D2CC62CCBD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F52286D9969AE9629D6A9E38 /* Pods-dz-4.8.3.debug.xcconfig */,
+				BEA0E36E2A1D3AABE1C50E1B /* Pods-dz-4.8.3.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE46A72D27995AFD0054DAE8 /* Build configuration list for PBXNativeTarget "dz-4.8.3" */;
 			buildPhases = (
+				C4D811988D42D3986F7526D9 /* [CP] Check Pods Manifest.lock */,
 				CE46A71527995AFA0054DAE8 /* Sources */,
 				CE46A71627995AFA0054DAE8 /* Frameworks */,
 				CE46A71727995AFA0054DAE8 /* Resources */,
+				0A415B2BE2C6FB4507E0CF86 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A415B2BE2C6FB4507E0CF86 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-dz-4.8.3/Pods-dz-4.8.3-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-dz-4.8.3/Pods-dz-4.8.3-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-dz-4.8.3/Pods-dz-4.8.3-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4D811988D42D3986F7526D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-dz-4.8.3-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE46A71527995AFA0054DAE8 /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		CE46A72E27995AFD0054DAE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F52286D9969AE9629D6A9E38 /* Pods-dz-4.8.3.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +371,7 @@
 		};
 		CE46A72F27995AFD0054DAE8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEA0E36E2A1D3AABE1C50E1B /* Pods-dz-4.8.3.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
